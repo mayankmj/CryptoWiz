@@ -12,7 +12,6 @@ const {Title} = Typography
 const Homepage = () => {
 
   const {data,isFetching} = useGetCryptosQuery();
-  console.log(data);
 
   const globalStats = data;
 
