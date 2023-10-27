@@ -11,7 +11,6 @@ const Cryptocurrencies = ({ simplified }) => {
   const { data: cryptosList, isFetching } = useGetCoinsQuery(count);
   const [cryptos, setCryptos] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
-  
   useEffect(() => {
     if (cryptosList && cryptosList['Top 50 Cryptocurrency Details']) {
       // Filter cryptocurrencies with images smaller than or equal to MAX_IMAGE_SIZE

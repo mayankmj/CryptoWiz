@@ -14,6 +14,7 @@ const Homepage = () => {
   const {data,isFetching} = useGetCryptosQuery();
 
   const globalStats = data;
+  console.log(data);
 
   if(isFetching) return 'Loading..';
   return (
@@ -29,16 +30,13 @@ const Homepage = () => {
 }/>
           </Col>
            <Col span={12}>
-               <Statistic title="Totol Exchanges" value="5"/>
+               <Statistic title="Totol Market Cap" value={globalStats.market_cap_usd}/>
           </Col>
            <Col span={12}>
-               <Statistic title="Totol Market Cap" value="5"/>
+               <Statistic title="Totol 24th Volume" value={globalStats.volume_24h_usd}/>
           </Col>
            <Col span={12}>
-               <Statistic title="Totol 24th Volume" value="5"/>
-          </Col>
-           <Col span={12}>
-               <Statistic title="Totol Markets" value="5"/>
+               <Statistic title="Bitcoin Dominance Percentage" value={globalStats.bitcoin_dominance_percentage}/>
           </Col> 
       </Row>
 
