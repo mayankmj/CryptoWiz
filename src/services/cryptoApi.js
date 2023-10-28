@@ -17,7 +17,11 @@ export const cryptoApi = createApi({
         getCryptos: builder.query({ 
             query: () => createRequest('/global'),
         }),
+        //  getCryptoDetails: builder.query({ 
+        //     query: (coinId) => createRequest('/'),
+        // }),
     })
+    
 })
 export const {
     useGetCryptosQuery,
