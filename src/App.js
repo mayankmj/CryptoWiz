@@ -26,13 +26,12 @@ const App = () => {
       
       <div className='footer' >
         <Typography.Title level={5} style={{color:'white' , textAlign: 'center'}}>
-            CryptoWiz <br />
-            All rights reserved
+            Made by Mayank Johari   
         </Typography.Title>
         <Space >
-            <Link to="/">Home</Link>
-             <Link to="/exchanges">Exchanges</Link>
-              <Link to="/news">News</Link>
+            <Link to="https://github.com/mayankmj">Github</Link>
+             <Link to="https://twitter.com/MayankJohari3">Twitter</Link>
+              <Link to="mailto:mayankjohari877@gmail.com">Email</Link>
         </Space>
       </div>
       </div>

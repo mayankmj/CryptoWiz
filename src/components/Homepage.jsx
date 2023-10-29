@@ -1,5 +1,4 @@
 import React from 'react'
-import millify from 'millify' // used ot convert long no to human readable format
 import { Typography ,  Row, Col ,Statistic } from 'antd'
 import { Link } from 'react-router-dom'
 
@@ -7,6 +6,9 @@ import { Link } from 'react-router-dom'
 import { useGetCryptosQuery } from '../services/cryptoApi'
 import Cryptocurrencies from './Cryptocurrencies'
 import News from './News'
+
+import './style/HomepageStyle.css'
+
 const {Title} = Typography
 
 const Homepage = () => {
@@ -18,8 +20,8 @@ const Homepage = () => {
 
   if(isFetching) return 'Loading..';
   return (
-    <div>
-      <Title level={2} className='heading'>
+    <div className='homepage-div'>
+      <Title level={2} className='homepage-title'>
           Global Crypto Statistic
       </Title>
 

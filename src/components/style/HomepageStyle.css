@@ -1,0 +1,12 @@
+.homepage-div{
+    margin: 20px!important
+}
+.homepage-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 40px!important;
+}
+.home-title{
+     font-size: 30px!important;
+}
