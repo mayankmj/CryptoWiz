@@ -1,1 +1,1 @@
-# deploy Link: https://cryptowizard.netlify.app/
+## deploy Link: https://cryptowizard.netlify.app/
